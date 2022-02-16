@@ -7,12 +7,15 @@ const Modal = ({ onClose, currentPhoto }) => {
     <div className="modalBackdrop">
       <div className="modalContainer">
         <h3 className="modalTitle">{name} </h3>
+        {/* text box */}
         <img
           src={require(`../../assets/large/${category}/${index}.jpg`)}
           alt="current category"
         />
         <p>{description}</p>
         <button type="button" onClick={onClose}>
+          {/* send button 
+          box that types*/}
           Close this modal
         </button>
       </div>

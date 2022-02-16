@@ -1,8 +1,8 @@
 {
-  "name": "photo-port",
+  "name": "danika-pearson-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://karmadog72.github.io/photo-port",
+  "homepage": "http://karmadog72.github.io/danika-pearson-portfolio",
   "dependencies": {
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",

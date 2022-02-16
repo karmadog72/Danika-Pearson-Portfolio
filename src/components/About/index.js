@@ -4,11 +4,11 @@ import coverImage from "../../assets/cover/cover-image.jpg";
 function About() {
   return (
     <section className="my-5">
-      <h1 id="about">Who am I </h1>
+      <h1 id="about">ABOUT ME </h1>
       <img
         src={coverImage}
         className="my-2"
-        style={{ width: "100%" }}
+        style={{ width: "300px" }}
         alt="cover"
       />
     </section>

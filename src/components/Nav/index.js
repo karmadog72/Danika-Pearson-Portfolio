@@ -16,9 +16,8 @@ function Nav(props) {
         <a data-testid="link" href="/">
           <span role="img" aria-label="camera">
             {" "}
-            📸
           </span>{" "}
-          Oh Snap!
+          Danika Pearson
         </a>
       </h2>
       <nav>
@@ -29,11 +28,11 @@ function Nav(props) {
               href="#about"
               onClick={() => setContactSelected(false)}
             >
-              About me
+              ABOUT ME
             </a>
           </li>
           <li className={`mx-2 ${contactSelected && "navActive"}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+            <span onClick={() => setContactSelected(true)}>CONTACT</span>
           </li>
           {categories.map((category) => (
             <li
