@@ -8,11 +8,6 @@ const Modal = ({ onClose, currentPhoto }) => {
     <div className="modalBackdrop">
       <div className="modalContainer">
         <h3 className="modalTitle">{name} </h3>
-        {/* text box */}
-        <img
-          src={require(`../../assets/large/${index}.jpg`).default}
-          alt="caption"
-        />
         <p>{description}</p>
         <a
           className="modal-button"
@@ -20,16 +15,18 @@ const Modal = ({ onClose, currentPhoto }) => {
           href={github}
           rel="noreferrer"
         >
-          GitHub Repo
+          GitHub Repo 🔗
         </a>
+        <br />
         <a
           className="modal-button"
           target="_blank"
           href={deployment}
           rel="noreferrer"
         >
-          Deployed Application
+          Deployed Application 🔗
         </a>
+        <br />
         <button type="button" onClick={onClose}>
           CLOSE
         </button>

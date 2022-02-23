@@ -8,7 +8,7 @@ main {
   --secondary: #95b3f3;
   --tertiary: #0b0352;
   --light: #ffffff;
-  --dark: #460c52;
+  --dark: #0c113a;
   --darker: #ffffff;
   --error: rgb(0, 0, 0);
   --spacing-one: calc(1rem * 0.5);
@@ -34,7 +34,7 @@ body {
   font-size: 18px;
   letter-spacing: 0.1em;
   color: var(--light);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* h1, */
@@ -43,7 +43,7 @@ h4,
 h5,
 h6 {
   color: #000000;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin: 5px 0;
   line-height: 1.25;
@@ -56,7 +56,7 @@ h1 {
   list-style: none;
   font-size: 2rem;
   color: #ffffff;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin: 5px 0;
   line-height: 1.25;
@@ -71,7 +71,7 @@ h2 {
   list-style: none;
   font-size: 2rem;
   color: #ffffff;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin: 5px 0;
   line-height: 1.25;
@@ -99,7 +99,7 @@ p {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-top: 0;
   padding-left: 10px;
   text-align: left;
@@ -119,6 +119,7 @@ p {
   color: var(--secondary);
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 a {
@@ -178,6 +179,11 @@ span[role="img"] {
 }
 
 form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
   width: 40%;
 }
 
@@ -208,10 +214,10 @@ nav li {
 }
 
 textarea {
-  width: 600px;
-  height: 120px;
+  width: 350px;
+  height: 100px;
   border: 3px solid #cccccc;
-  padding: 5px;
+  padding: 5px 0 10px 0;
 }
 
 .container {
@@ -222,6 +228,7 @@ textarea {
 }
 
 .flex-row {
+  /* position: fixed; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -296,12 +303,12 @@ textarea {
 }
 
 .modalContainer {
-  background: var(--darker);
+  background: #9416ad;
   border-radius: 5px;
   max-width: 100%;
   margin: 50px auto;
   padding: 15px;
-  width: 960px;
+  width: 360px;
 }
 
 .modalTitle {
@@ -318,7 +325,8 @@ button {
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   padding: 10px 15px;
 }
 
@@ -335,16 +343,14 @@ a {
 .footer {
   margin-top: 1rem;
   padding: 1rem;
-  background-color: #460c52;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  background-color: #000000;
+  position: sticky;
   width: 100%;
 }
 ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
 }

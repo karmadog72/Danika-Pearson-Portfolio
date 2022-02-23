@@ -14,7 +14,6 @@ const Footer = () => (
             style={{ width: "64px", height: "64px" }}
             alt="0.png"
           />
-          {/* LinkedIn */}
         </a>
       </li>
 
@@ -26,18 +25,17 @@ const Footer = () => (
             style={{ width: "64px", height: "64px" }}
             alt="1.png"
           />
-          {/* GitHub */}
         </a>
       </li>
       <li>
-        <a href="mailto:danika.m.pearson@gmail.com">
+        {/* <a href="mailto:danika.m.pearson@gmail.com"> */}
+        <a href="https://dashboard.heroku.com/apps">
           <img
             src={commercial3}
             className="my-2"
             style={{ width: "64px", height: "64px" }}
             alt="2.png"
           />
-          {/* Email */}
         </a>
       </li>
     </ul>

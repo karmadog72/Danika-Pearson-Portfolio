@@ -14,12 +14,6 @@ const Nav = (props) => {
 
   return (
     <header className="flex-row px-1">
-      {/* <img
-        src={coverImage}
-        className="my-2"
-        style={{ width: "120px", height: "120px" }}
-        alt="cover"
-      /> */}
       <h2>
         <a data-testid="link" href="/">
           Danika Pearson

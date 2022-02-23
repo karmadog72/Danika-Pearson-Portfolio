@@ -7,51 +7,55 @@ const PhotoList = ({ category }) => {
 
   const [photos] = useState([
     {
-      name: "project",
-      description: "lorem ipsum",
-      caption: "SYNTAX",
-      github: "https://github.com/",
-      deployment: "https://github.com/",
+      name: "Project",
+      description:
+        "Welcome to SYNTAX! Hire, Connect & Collaborate in our world of coding!",
+      caption: "SYNTAX ↗",
+      github: "https://github.com/karmadog72/Syntax",
+      deployment: "https://syntax-uofu.herokuapp.com",
       photo: "syntax.jpg",
     },
 
     {
-      name: "project",
-      description: "lorem ipsum",
-      caption: "Al-Together",
+      name: "Project",
+      description:
+        "AL-Together helps people with memory loss navigate daily life, with use of our website.",
+      caption: "AL-Together ↗",
       github: "https://github.com/karmadog72/AL-together",
       deployment: "https://lannylopez.github.io/AL-together/",
       photo: "al-together.jpg",
     },
     {
-      name: "project",
-      description: "lorem ipsum",
-      caption: "Allergy Finder",
+      name: "Project",
+      description:
+        "A user-friendly allergen filtered grocery application created for those who struggle with finding grocery products excluding their allergies",
+      caption: "Allergy Finder ↗",
       github: "https://github.com/karmadog72/Allergy-Finder",
       deployment: "https://whispering-chamber-78611.herokuapp.com/",
       photo: "allergy-finder.jpg",
     },
     {
-      name: "project",
-      description: "lorem ipsum",
-      caption: "CMS Blog",
+      name: "Project",
+      description:
+        "A tech blog to publish articles, comment on / post thoughts, opinions and general information",
+      caption: "CMS Blog ↗",
       github: "https://github.com/karmadog72/CMS-BLOG",
       deployment: "https://murmuring-meadow-54235.herokuapp.com/",
       photo: "cms-blog.jpg",
     },
     {
-      name: "project",
-      description: "lorem ipsum",
-      caption: "Password Generator",
+      name: "Project",
+      description: "An app to help people generate a random password.",
+      caption: "Generator ↗",
       github: "https://github.com/karmadog72/JavaScript-Password-Challenge-",
       deployment:
         "https://github.com/karmadog72/JavaScript-Password-Challenge-",
       photo: "pswd-gen.jpg",
     },
     {
-      name: "project",
-      description: "lorem ipsum",
-      caption: "Portfolio Challenge",
+      name: "Project",
+      description: "My 1st ever web developer portfolio.",
+      caption: "Portfolio ↗",
       github: "https://github.com/karmadog72/portfolio-challenge-",
       deployment: "https://karmadog72.github.io/portfolio-challenge-/",
       photo: "portfolio-challenge.jpg",

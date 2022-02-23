@@ -13,13 +13,14 @@ function App() {
     },
     {
       name: "RESUME",
-      description: "",
+      description:
+        "https://docs.google.com/document/d/10TNbdwt8S-v5pynfZDL_FST3l9nKzCNbYUIo45Ey65I/edit?usp=sharing",
     },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
-  const [contactSelected, setContactSelected] = useState(false);
+  const [contactSelected, setContactSelected] = useState(true);
 
   return (
     <div>
@@ -34,15 +35,15 @@ function App() {
       ></Nav>
       <main>
         <About></About>
-
+        {/* <Resume></Resume> */}
         {!contactSelected ? (
           <>
-            {" "}
             <Gallery currentCategory={currentCategory}></Gallery>
           </>
         ) : (
           <ContactForm></ContactForm>
         )}
+
         <div className="App">
           <h1></h1>
           <Footer />
