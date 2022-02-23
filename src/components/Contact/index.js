@@ -39,19 +39,21 @@ function ContactForm() {
 
   return (
     <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+      <h1 className="contact" data-testid="h1tag">
+        CONTACT ME
+      </h1>
       <form id="-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            defaultValue={name}
-            onBlur={handleChange}
-          />
-        </div>
+        <label htmlFor="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          defaultValue={name}
+          onBlur={handleChange}
+        />
+
         <div>
           <label htmlFor="email">Email address:</label>
+
           <input
             type="email"
             name="email"

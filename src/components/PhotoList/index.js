@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "../Modal";
+import Modal from "../Modal/index";
 
 const PhotoList = ({ category }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -7,118 +7,54 @@ const PhotoList = ({ category }) => {
 
   const [photos] = useState([
     {
-      name: "Grocery aisle",
-      category: "commercial",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: "project",
+      description: "lorem ipsum",
+      caption: "SYNTAX",
+      github: "https://github.com/",
+      deployment: "https://github.com/",
+      photo: "syntax.jpg",
+    },
+
+    {
+      name: "project",
+      description: "lorem ipsum",
+      caption: "Al-Together",
+      github: "https://github.com/karmadog72/AL-together",
+      deployment: "https://lannylopez.github.io/AL-together/",
+      photo: "al-together.jpg",
     },
     {
-      name: "Grocery booth",
-      category: "commercial",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: "project",
+      description: "lorem ipsum",
+      caption: "Allergy Finder",
+      github: "https://github.com/karmadog72/Allergy-Finder",
+      deployment: "https://whispering-chamber-78611.herokuapp.com/",
+      photo: "allergy-finder.jpg",
     },
     {
-      name: "Building exterior",
-      category: "commercial",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: "project",
+      description: "lorem ipsum",
+      caption: "CMS Blog",
+      github: "https://github.com/karmadog72/CMS-BLOG",
+      deployment: "https://murmuring-meadow-54235.herokuapp.com/",
+      photo: "cms-blog.jpg",
     },
     {
-      name: "Restaurant table",
-      category: "commercial",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: "project",
+      description: "lorem ipsum",
+      caption: "Password Generator",
+      github: "https://github.com/karmadog72/JavaScript-Password-Challenge-",
+      deployment:
+        "https://github.com/karmadog72/JavaScript-Password-Challenge-",
+      photo: "pswd-gen.jpg",
     },
     {
-      name: "Cafe interior",
-      category: "commercial",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Cat green eyes",
-      category: "portraits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Green parrot",
-      category: "portraits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Yellow macaw",
-      category: "portraits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Pug smile",
-      category: "portraits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Pancakes",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Burrito",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Scallop pasta",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Burger",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Fruit bowl",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Green river",
-      category: "landscape",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Docks",
-      category: "landscape",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Panoramic village by sea",
-      category: "landscape",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Domestic landscape",
-      category: "landscape",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Park bench",
-      category: "landscape",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: "project",
+      description: "lorem ipsum",
+      caption: "Portfolio Challenge",
+      github: "https://github.com/karmadog72/portfolio-challenge-",
+      deployment: "https://karmadog72.github.io/portfolio-challenge-/",
+      photo: "portfolio-challenge.jpg",
     },
   ]);
 
@@ -129,23 +65,36 @@ const PhotoList = ({ category }) => {
     setIsModalOpen(!isModalOpen);
   };
 
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // const [currentPhoto, setCurrentPhoto] = useState();
+
+  // const toggleModal = (image, i) => {
+  //   setCurrentPhoto({ ...image, index: i });
+  //   setIsModalOpen(!isModalOpen);
+  // };
+
   return (
-    <div>
-      {isModalOpen && (
-        <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
-      )}
-      <div className="flex-row">
-        {currentPhotos.map((image, i) => (
-          <img
-            src={require(`../../assets/small/${category}/${i}.jpg`)}
-            alt={image.name}
-            className="img-thumbnail mx-1"
-            onClick={() => toggleModal(image, i)}
-            key={image.name}
-          />
+    <section>
+      <div>
+        {isModalOpen && (
+          <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
+        )}
+      </div>
+      <div className="project-row">
+        {photos.map((image, i) => (
+          <div className="project-img" key={i}>
+            <p className="project-name" onClick={() => toggleModal(image, i)}>
+              {image.caption}
+            </p>
+            <img
+              src={require(`../../assets/large/portfolio/${image.photo}`)}
+              alt={image.name}
+            />
+          </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,22 +1,27 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+// import coverImage from "../../assets/cover/cover-image.jpg";
 
-function Nav(props) {
+const Nav = (props) => {
   const {
     categories = [],
     setCurrentCategory,
     contactSelected,
     currentCategory,
+    // setAboutSelected
     setContactSelected,
   } = props;
 
   return (
     <header className="flex-row px-1">
+      {/* <img
+        src={coverImage}
+        className="my-2"
+        style={{ width: "120px", height: "120px" }}
+        alt="cover"
+      /> */}
       <h2>
         <a data-testid="link" href="/">
-          <span role="img" aria-label="camera">
-            {" "}
-          </span>{" "}
           Danika Pearson
         </a>
       </h2>
@@ -57,6 +62,6 @@ function Nav(props) {
       </nav>
     </header>
   );
-}
+};
 
 export default Nav;

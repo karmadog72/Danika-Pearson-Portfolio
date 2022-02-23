@@ -7,7 +7,7 @@ function Gallery(props) {
   return (
     <section>
       <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-      <p>{currentCategory.name}</p>
+      {/* <p>{currentCategory.name}</p> */}
       <PhotoList category={currentCategory.name} />
     </section>
   );

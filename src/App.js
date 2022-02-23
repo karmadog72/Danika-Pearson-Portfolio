@@ -3,19 +3,17 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import ContactForm from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [categories] = useState([
     {
-      name: "commercial",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      name: "PORTFOLIO",
+      description: "All my work",
     },
-    { name: "portraits", description: "Portraits of people in my life" },
-    { name: "food", description: "Delicious delicacies" },
     {
-      name: "landscape",
-      description: "Fields, farmhouses, waterfalls, and the beauty of nature",
+      name: "RESUME",
+      description: "",
     },
   ]);
 
@@ -27,20 +25,28 @@ function App() {
     <div>
       <Nav
         categories={categories}
+        // aboutSelected={aboutSelected}
+        // setAboutSelected={setAboutSelected}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
+        <About></About>
+
         {!contactSelected ? (
           <>
+            {" "}
             <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
           </>
         ) : (
           <ContactForm></ContactForm>
         )}
+        <div className="App">
+          <h1></h1>
+          <Footer />
+        </div>
       </main>
     </div>
   );
