@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/danika-pearson-portfolio/static/css/main.65ffce48.chunk.css",
+    "main.js": "/danika-pearson-portfolio/static/js/main.a6d1474a.chunk.js",
+    "main.js.map": "/danika-pearson-portfolio/static/js/main.a6d1474a.chunk.js.map",
+    "runtime-main.js": "/danika-pearson-portfolio/static/js/runtime-main.cdfadd86.js",
+    "runtime-main.js.map": "/danika-pearson-portfolio/static/js/runtime-main.cdfadd86.js.map",
+    "static/js/2.6b4f2226.chunk.js": "/danika-pearson-portfolio/static/js/2.6b4f2226.chunk.js",
+    "static/js/2.6b4f2226.chunk.js.map": "/danika-pearson-portfolio/static/js/2.6b4f2226.chunk.js.map",
+    "static/js/3.68b6ee2a.chunk.js": "/danika-pearson-portfolio/static/js/3.68b6ee2a.chunk.js",
+    "static/js/3.68b6ee2a.chunk.js.map": "/danika-pearson-portfolio/static/js/3.68b6ee2a.chunk.js.map",
+    "index.html": "/danika-pearson-portfolio/index.html",
+    "precache-manifest.6b98c30edeab595220674e1db7f36e8a.js": "/danika-pearson-portfolio/precache-manifest.6b98c30edeab595220674e1db7f36e8a.js",
+    "service-worker.js": "/danika-pearson-portfolio/service-worker.js",
+    "static/css/main.65ffce48.chunk.css.map": "/danika-pearson-portfolio/static/css/main.65ffce48.chunk.css.map",
+    "static/js/2.6b4f2226.chunk.js.LICENSE.txt": "/danika-pearson-portfolio/static/js/2.6b4f2226.chunk.js.LICENSE.txt",
+    "static/media/al-together.jpg": "/danika-pearson-portfolio/static/media/al-together.457603ab.jpg",
+    "static/media/allergy-finder.jpg": "/danika-pearson-portfolio/static/media/allergy-finder.9ba95b46.jpg",
+    "static/media/cms-blog.jpg": "/danika-pearson-portfolio/static/media/cms-blog.6de4dc8c.jpg",
+    "static/media/cover-image.jpg": "/danika-pearson-portfolio/static/media/cover-image.1291cadf.jpg",
+    "static/media/portfolio-challenge.jpg": "/danika-pearson-portfolio/static/media/portfolio-challenge.3838593d.jpg",
+    "static/media/pswd-gen.jpg": "/danika-pearson-portfolio/static/media/pswd-gen.d0439c37.jpg",
+    "static/media/syntax.jpg": "/danika-pearson-portfolio/static/media/syntax.73dc3b51.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cdfadd86.js",
+    "static/js/2.6b4f2226.chunk.js",
+    "static/css/main.65ffce48.chunk.css",
+    "static/js/main.a6d1474a.chunk.js"
+  ]
+}
